@@ -224,7 +224,10 @@ void Qt5CTPlatformTheme::applySettings()
     QGuiApplication::setFont(m_generalFont); //apply font
     QIcon::setThemeName(m_iconTheme); //apply icons
     if(m_customPalette && m_usePalette)
+    {
         QGuiApplication::setPalette(*m_customPalette); //apply palette
+        qApp->setPalette(*m_customPalette);
+    }
 
 #ifdef QT_WIDGETS_LIB
     if(hasWidgets())
