@@ -1,0 +1,22 @@
+diff --git a/src/plugins/coreplugin/themesettingswidget.cpp b/src/plugins/coreplugin/themesettingswidget.cpp
+index f098762..c6fa2cf 100644
+--- a/src/plugins/coreplugin/themesettingswidget.cpp
++++ b/src/plugins/coreplugin/themesettingswidget.cpp
+@@ -420,7 +420,7 @@ void ThemeSettingsWidget::copyThemeByName(const QString &name)
+ 
+ void ThemeSettingsWidget::apply()
+ {
+-    const QString themeName = d->m_currentTheme.name();
++    /*const QString themeName = d->m_currentTheme.name();
+     Theme *newTheme = new Theme(themeName);
+     if (d->m_currentTheme.readOnly()) {
+         QSettings themeSettings(d->m_currentTheme.filePath(), QSettings::IniFormat);
+@@ -447,7 +447,7 @@ void ThemeSettingsWidget::apply()
+ 
+     // save filename of selected theme in global config
+     QSettings *settings = ICore::settings();
+-    settings->setValue(QLatin1String(Constants::SETTINGS_THEME), themeName);
++    settings->setValue(QLatin1String(Constants::SETTINGS_THEME), themeName);*/
+ }
+ 
+ } // namespace Internal

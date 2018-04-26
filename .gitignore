@@ -1,0 +1,14 @@
+# built executable
+qt5ct/src/qt5ct/qt5ct
+
+# generated translation files
+/qt5ct/src/qt5ct/translations/*.qm
+
+# generated Makefiles
+Makefile
+
+# generated build directories
+.build
+
+# vim temporary files
+.*.swp
